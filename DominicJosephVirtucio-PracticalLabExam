@@ -1,0 +1,27 @@
+#include <iostream>
+#include <stack>
+
+using namespace std;
+
+int main() {
+    stack<int> stacks;
+
+    cout << "10 pushed into stack" << endl;
+    cout << "20 pushed into stack" << endl;
+    cout << "30 pushed into stack" << endl;
+    cout << "30 Popped from stack" << endl;
+    
+    stacks.push(10);
+	stacks.push(20); 
+	stacks.push(30);
+	stacks.pop();
+
+    cout << "Stack elements are" << endl;
+    while (!stacks.empty()) {
+        cout << stacks.top() << " ";
+        stacks.pop();
+    }
+    cout << endl;
+
+    return 0;
+}
